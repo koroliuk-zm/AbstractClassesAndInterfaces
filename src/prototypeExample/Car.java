@@ -2,14 +2,14 @@ package prototypeExample;
 
 public class Car implements Cloneable {
 
-    public enum CarType {
+    public enum CarMark {
         MERCEDES,
         BMW,
         FERRARI,
         TOYOTA
     }
 
-    private CarType carType;
+    private CarMark carMark;
     private Person owner;
 
 
@@ -27,12 +27,12 @@ public class Car implements Cloneable {
         return owner;
     }
 
-    public void setCarType(CarType carType) {
-        this.carType = carType;
+    public void setCarMark (CarMark carMark) {
+        this.carMark = carMark;
     }
 
-    public CarType getCarType() {
-        return carType;
+    public CarMark getCarMark() {
+        return carMark;
     }
 
 

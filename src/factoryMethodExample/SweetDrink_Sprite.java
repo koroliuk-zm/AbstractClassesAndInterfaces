@@ -3,13 +3,13 @@ package factoryMethodExample;
 
 import java.util.ArrayList;
 
-public class SweetWater_Sprite extends Water {
+public class SweetDrink_Sprite extends Drink {
 
     @Override
-    ArrayList<Water> makeWaterPackage(int quantity) {
+    ArrayList<Drink> makeDrinkPackage(int quantity) {
         ArrayList sweetWaterPackage = new ArrayList<>();
         for (int i = 1; i <= quantity; i++) {
-            SweetWater_Sprite sprite = new SweetWater_Sprite();
+            SweetDrink_Sprite sprite = new SweetDrink_Sprite();
             sweetWaterPackage.add(sprite);
         }
 

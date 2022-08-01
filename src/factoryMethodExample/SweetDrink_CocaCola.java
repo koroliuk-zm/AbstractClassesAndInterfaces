@@ -7,13 +7,13 @@ import java.util.ArrayList;
  *
  * @author bethan
  */
-public class SweetWater_CocaCola extends Water {
+public class SweetDrink_CocaCola extends Drink {
 
     @Override
-    ArrayList<Water> makeWaterPackage(int quantity) {
+    ArrayList<Drink> makeDrinkPackage(int quantity) {
         ArrayList sweetWaterPackage = new ArrayList<>();
         for (int i = 1; i <= quantity; i++) {
-            SweetWater_CocaCola cocaCola = new SweetWater_CocaCola();
+            SweetDrink_CocaCola cocaCola = new SweetDrink_CocaCola();
             sweetWaterPackage.add(cocaCola);
         }
 
